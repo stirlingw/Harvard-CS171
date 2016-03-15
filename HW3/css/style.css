@@ -1,0 +1,16 @@
+
+
+/* ************ ADD YOUR CUSTOM STYLES ************ */
+body{
+    background-color: #d3d3d3;
+}
+
+#chart-data{
+    margin-left: 50px;
+}
+
+#chart-data > table > tbody > tr > td{
+    font-size: 20px;
+    font-weight: 900;
+    border-top: 1px solid #eee;
+}

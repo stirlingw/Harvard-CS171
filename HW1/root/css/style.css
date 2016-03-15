@@ -1,0 +1,29 @@
+
+
+body{
+    font-family: Arial;
+    margin: 10px 10px 10px 10px;
+}
+
+h1{
+    font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
+    font-size: 40px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 500;
+    line-height: 26.4px;
+
+}
+
+.global-hunger-th{
+    background-color: #ddd;
+}
+
+.global-hunger-tr{
+    background-color: #ffbbbb;
+}
+
+.global-hunger-tr-alt{
+    background-color: #bbbbff;
+}
+

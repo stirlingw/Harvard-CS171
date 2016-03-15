@@ -1,0 +1,58 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="description" content="">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>CS171 - Introduction to JavaScript</title>
+
+		<!-- Load CSS libraries -->
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/style.css">
+
+		<style>
+
+		</style>
+
+	</head>
+	<body>
+
+	<div class="container">
+		<div class="col-sm-offset-1 col-sm-8">
+			<h1>Global Attractions Attendance</h1>
+		</div>
+		<div class="col-sm-offset-1 col-sm-8">
+			<form class="form-inline">
+				<div class="form-group">
+					<label for="SELECT-ID" class="control-label">Choose Category:</label>
+					<select id="SELECT-ID" class="form-control" onchange="dataManipulation()" >
+						<option value="all">All Attractions</option>
+						<option value="Theme Park">Theme Park</option>
+						<option value="Water Park">Water Park</option>
+						<option value="Museum">Museum</option>
+					</select>
+				</div>
+			</form>
+		</div>
+
+
+		<!-- Parent container of our bar chart -->
+		<div id="chart-area"></div>
+
+	</div>
+	
+	  
+	<!-- Load JS libraries: jQuery, bootstrap, D3, D3 Tooltips -->
+	<script src="js/jquery.min.js"></script>
+	<link href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.6/flatly/bootstrap.min.css" rel="stylesheet" integrity="sha256-Av2lUNJFz7FqxLquvIFyxyCQA/VHUFna3onVy+5jUBM= sha512-zyqATyziDoUzMiMR8EAD3c5Ye55I2V3K7GcmJDHbL49cXzFQCEA6flSKqxEzwxXqq73/M4A0jKFFJ/ysEhbExQ==" crossorigin="anonymous">
+	<script src="js/d3.min.js"></script>
+	<script src="js/d3-tip.js"></script>
+
+	<!-- Completed: data loading, bar-chart rendering -->
+	<script src="js/global-attractions.js"></script>
+	<script src="js/barchart.js"></script>
+
+	<!-- *** ADD JS CODE TO THE FOLLOWING FILE: *** -->
+	<script src="js/lab2.js"></script>
+	</body>
+</html>

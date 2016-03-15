@@ -1,0 +1,63 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="description" content="">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>CS171 - HW2</title>
+
+		<!-- Load CSS libraries -->
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/style.css">
+	</head>
+	<body>
+
+	<!-- ********************** ADD YOUR HTML-ELEMENTS HERE *********************** -->	
+	<!-- Make sure to include a div-container with the id: 'chart-area' -->
+	<div class="container">
+		<div class="col-sm-offset-4 col-sm-9">
+			<h1>Pizza World Delivery</h1>
+		</div>
+		<div class="col-sm-offset-5 col-sm-9">
+			<h4>CS 171 - Homework 2</h4>
+		</div>
+		<div class="col-sm-offset-1 col-sm-11">
+			<form class="form-inline">
+				<div class="form-group">
+					<label for="area-select-id" class="control-label">Cities:</label>
+					<select id="area-select-id" class="form-control" onchange="updateVisualization()" >
+						<option value="all">All Cities</option>
+						<option value="Boston">Boston</option>
+						<option value="Cambridge">Cambridge</option>
+						<option value="Somerville">Somerville</option>
+					</select>
+				</div>
+				<div class="form-group">
+					<label for="order-type-id" class="control-label">Order Type:</label>
+					<select id="order-type-id" class="form-control" onchange="updateVisualization()" >
+						<option value="all">All Order Types</option>
+						<option value="phone">Phone</option>
+						<option value="web">Web</option>
+					</select>
+				</div>
+			</form>
+		</div>
+		<div id="chart-area"></div>
+	</div>
+	
+
+	<!-- Load JS libraries: jQuery, bootstrap, D3, D3 Tooltips -->
+	<script src="js/jquery.min.js"></script>
+	<link href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.6/flatly/bootstrap.min.css" rel="stylesheet" integrity="sha256-Av2lUNJFz7FqxLquvIFyxyCQA/VHUFna3onVy+5jUBM= sha512-zyqATyziDoUzMiMR8EAD3c5Ye55I2V3K7GcmJDHbL49cXzFQCEA6flSKqxEzwxXqq73/M4A0jKFFJ/ysEhbExQ==" crossorigin="anonymous">
+	<script src="js/d3.min.js"></script>
+	<script src="js/d3-tip.js"></script>
+
+	<!-- Completed: Data loading, bar chart rendering -->
+	<script src="js/delivery-data.js"></script>
+	<script src="js/feedback-data.js"></script>
+	<script src="js/barchart.js"></script>
+
+	<!-- ****** TODO: FILTER DATA, DISPLAY BAR CHART & KEY FIGURES ****** -->
+	<script src="js/main.js"></script>
+	</body>
+</html>

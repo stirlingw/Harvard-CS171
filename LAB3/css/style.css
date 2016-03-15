@@ -1,0 +1,12 @@
+.city-label {
+  font-size: 11px;
+  text-anchor: middle;
+}
+
+circle:hover {
+    fill: #bbb;
+    stroke: #999;
+}
+circle.clickable:hover {
+    cursor: pointer;
+}

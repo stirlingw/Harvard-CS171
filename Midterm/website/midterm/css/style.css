@@ -1,0 +1,118 @@
+
+/* YOUR CSS STYLES */
+
+path {
+  stroke:white;
+  stroke-width: 1px;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+.city {
+  font: 10px sans-serif;
+  font-weight: bold;
+}
+
+.legend {
+  font-size: 12px;
+}
+
+/*********************/
+/*  TOOLTIP OVERLAY  */
+/*********************/
+
+.d3-tip {
+  line-height: 1;
+  font-weight: bold;
+  padding: 12px;
+  background: rgba(88, 88, 88, 1);
+  color: #fff;
+  border-radius: 2px;
+}
+
+/* Creates a small triangle extender for the tooltip */
+.d3-tip:after {
+  box-sizing: border-box;
+  display: inline;
+  font-size: 10px;
+  width: 100%;
+  line-height: 1;
+  color: rgba(88, 88, 88, 1);
+  content: "\25BC";
+  position: absolute;
+  text-align: center;
+}
+
+/* Style northward tooltips differently */
+.d3-tip.n:after {
+  margin: -1px 0 0 0;
+  top: 100%;
+  left: 0;
+}
+
+*{outline:none;}.clearfix:before,.clearfix:after{content:"";display:table;}.clearfix:after{clear:both;}/* For IE 6/7 (trigger hasLayout) */.clearfix{zoom:1;}
+html {min-width: 1040px;}
+body {background: #FFF;color: #333;font-family:'Computer Modern', 'Helvetica Neue', Arial, Helvetica, Geneva, sans-serif;margin: 1em auto 4em auto;position: relative;width: 960px;}
+
+header,footer,h1,h2,h3,h4,aside {color: #000;}
+h1 {font-size: 52px;font-weight: 300;letter-spacing: -2px;margin: .3em 0 .1em 0;line-height:1.2em;}
+h2 {margin-top: 2em;}
+h1, h2 {text-rendering: optimizeLegibility;}
+h2 a {color: #ccc;left:-30px;position: absolute;width: 740px;}h2 a:hover{text-decoration:none;}
+
+header{margin-top:2em;}
+footer {font-size: small;margin-top: 8em;clear:both;}
+
+header aside {}
+header aside,footer aside {color: #636363;text-align: right;}
+aside {font-size: small;line-height:1.2em;right: 0;position: absolute;width: 180px;}
+
+.attribution {font-size: small;margin-bottom: 2em;}
+body > p, li > p {line-height: 1.5em;}
+body > p {width: 720px;font-size:17px;line-height:24px;}
+body > blockquote {width: 640px;}
+body > ol {font-size:16px;line-height:24px;}
+
+blockquote q {display: block;font-style: oblique;}
+blockquote:before {position: absolute;left: 2em;}
+blockquote:after {position: absolute;}
+li {width: 680px;}
+sup, sub {line-height: 0;}
+
+a {color: steelblue;}
+a:not(:hover) {text-decoration: none;}
+
+pre, code, textarea {font-family: "Menlo", monospace;}
+pre{}
+code {line-height: 1.4em;font-size:12px;}
+textarea {font-size: 100%;}
+body > pre {margin: 2em 0 2em 0;}
+
+svg {font: 10px sans-serif;}
+.axis path, .axis line {fill: none;stroke: #000;shape-rendering: crispEdges;}
+
+iframe{border:0;}
+
+.axis path,.axis line {fill: none;stroke:#b6b6b6;shape-rendering: crispEdges;}
+/*.tick line{fill:none;stroke:none;}*/
+.tick text{fill:#999;}
+g.journal.active{cursor:pointer;}
+text.label{font-size:12px;font-weight:bold;cursor:pointer;}
+text.value{font-size:12px;font-weight:bold;}
+
+
+.sec-chart-header{
+   background-color: rgb(217, 217, 217);
+   height:40px;
+}
+
+.sec-chart-header h3{
+  margin-left: 15px;
+  padding-top: 5px;
+}
+
+.sec-chart-img{
+  padding-top: 5px;
+}

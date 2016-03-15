@@ -1,0 +1,82 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>CS171 - HW 5</title>
+
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+	<div class="container">
+
+		<h1>FIFA World Cup<sup>TM</sup> - All Time Statistics</h1>
+
+		<!-- Select box to choose the ranking type -->
+		<form class="form-inline">
+			<div class="form-group">
+				<label for="data-type">Data Chart:</label>
+				<select class="form-control" id="data-type">
+					<option value="GOALS">Goals</option>
+					<option value="AVERAGE_GOALS">Average Goals</option>
+					<option value="TEAMS">Teams</option>
+					<option value="MATCHES">Matches</option>
+				</select>
+				<input type="number" class="form-control" id="input-date-min" placeholder="Start Year (1940)">
+				<input type="number" class="form-control" id="input-date-max" placeholder="End Year (2000)">
+				<button type="button" class="btn btn-success" id="btn-update">Filter</button>
+			</div>
+		</form>
+
+		<!-- Parent container for the visualization -->
+		<div class="row">
+			<div class="col-xs-7" id="chart-area"></div>
+			<div class="col-xs-5 well" id="chart-info" >
+				<h4 id="chart-info-header"></h4>
+				<table class="table">
+					<tr>
+						<td>Average Attendance:</td>
+						<td id="chart-info-avg-attendance"></td>
+					</tr>
+					<tr>
+						<td>Average Goals:</td>
+						<td id="chart-info-avg-goals"></td>
+					</tr>
+					<tr>
+						<td>Goals:</td>
+						<td id="chart-info-goals"></td>
+					</tr>
+					<tr>
+						<td>Location:</td>
+						<td id="chart-info-location"></td>
+					</tr>
+					<tr>
+						<td>Matches:</td>
+						<td id="chart-info-matches"></td>
+					</tr>
+					<tr>
+						<td>Teams:</td>
+						<td id="chart-info-teams"></td>
+					</tr>
+					<tr>
+						<td>Winner:</td>
+						<td id="chart-info-winner"></td>
+					</tr>
+				</table>
+			</div>
+		</div>
+	</div>
+
+	<!-- Load JS libraries: jQuery, bootstrap, D3, D3 tooltip -->
+	<script src="js/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/d3.min.js"></script>
+	<script src="js/d3.tip.js"></script>
+
+	<!-- Your implementation -->
+	<script src="js/main.js"></script>
+</body>
+</html>
