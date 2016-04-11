@@ -62,8 +62,8 @@ function brushed() {
 		timeline.brush.empty() ? timeline.x.domain() : timeline.brush.extent()
 	);
 
-	console.log(areachart);
-	console.log(timeline);
+	//console.log(areachart);
+	//console.log(timeline);
 
 	// Update focus chart (detailed information)
 	areachart.wrangleData();
